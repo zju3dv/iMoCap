@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Fast and Robust Multi-Person 3D Pose Estimation from Multiple Views</title>
+
+  <style type="text/css">
+    body {
+      margin: 0px;
+      background-color: #F3F3F3;
+      font-family: 'PT Sans', 'Arial';
+    }
+    h1 {
+      text-align: center;
+      color: #444444;
+      font-size: 36px;
+      margin-top:50px;
+      margin-bottom: 0px;
+    }
+    h2 {
+      margin-top: 120px;
+      margin-bottom: 10px;
+      color: #FFCF43;
+      font-size: 30px;
+    }
+    #headerdiv {
+      width: 1150px;
+      margin: auto;
+    }
+    #maincontent {
+      width: 1000px;
+      margin: auto;
+      height: 340px;
+    }
+    #suppcontent {
+      padding-top: 0px;
+      background-color: black;
+      color: #BBBBBB;
+      font-size: 16px;
+    }
+    
+    #content {
+      width: 1000px;
+      margin: auto;
+    }
+    td {
+      vertical-align: top;
+      text-align: center;
+    }
+    .desc {
+      color: #888888;
+    }
+    .center {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    .nips {
+      text-align: center;
+      margin-top: 0px;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .nips a {
+      color: #777777;
+    }
+    .google {
+      text-align: center;
+      margin-top: 2px;
+      font-size: 15px;
+    }
+    .google a {
+      color: #204c87;
+    }
+    .center {
+      text-align: center;
+    }
+    .authors {
+      text-align: center;
+    }
+    .author {
+      margin-right: 45px;
+      font-size: 21px;
+    }
+    .author a {
+      color: #3376cb;
+    }
+    #abstract {
+      line-height: 1.3;
+      width: 1000px;
+      font-size: 16px;
+    }
+    h2 {
+      color: #666666;
+      margin-top: 70px;
+    }
+    h1.supp {
+      padding-top: 40px;
+      margin-top: 0;
+      color:#aaaaaa;
+      font-size:40px;
+      margin-bottom: 20px;
+    }
+    h2.abstract {
+      color: #555555;
+      margin-top: 0px;
+    }
+    #files {
+      color: #555555;
+      margin-top: 20px;
+      font-size: 25px;
+    }
+    #files a {
+      text-decoration: None;
+      color: #3376cb;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+        <!--Start Intro-->
+<div id="headerdiv">
+  <h1>
+  Fast and Robust Multi-Person 3D Pose Estimation <br>from Multiple Views
+  </h1>
+  <!-- <div class="nips"><a href="https://nips.cc/">NIPS 2018 (oral)</a></div> -->
+</div>
+  <div id="maincontent">
+  <div class="authors" style="margin-top: 10px">
+  <span class="author"><a href="http://jtdong.com">Junting Dong</a><sup>1</sup></a></span>
+  <span class="author"><a href="https://jiangwenpl.github.io/">Wen Jiang</a><sup>1</sup></a></span>
+  <span class="author"><a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a><sup>2</sup></a></span>
+  <span class="author"><a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>1</sup></a></span>
+  <span class="author"><a href="http://www.cad.zju.edu.cn/home/xzhou/">Xiaowei Zhou</a><sup>1</sup></a></span>
+  </div>
+<div class="google" style="margin-top: 10px">1. State Key Lab of CAD & CG, ZheJiang University &nbsp;&nbsp;&nbsp;&nbsp; 2. Graphics & AI Lab, University of Texas at Austin</div>
+
+  
+<div class="flex-item flex-column">
+
+
+<div class="content-container" >
+    <div class="content">
+
+      <div class="content-table flex-column">
+        <!--End Intro-->
+	<center>
+<iframe width="800" height="600" src="https://www.youtube.com/embed/axSRz6G98gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</center>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="content">
+<div class="content-table">
+<div class="flex-row">
+
+<div id="abstract">
+    <h2 class="abstract" > Abstract </h2>
+<p style="text-align:justify">
+This paper addresses the problem of 3D pose estimation for multiple people in a few calibrated camera views. The main challenge of this problem is to find the cross-view correspondences among noisy and incomplete 2D pose predictions. Most previous methods address this challenge by directly reasoning in 3D using a pictorial structure model, which is inefficient due to the huge state space. We propose a fast and robust approach to solve this problem. Our key idea is to use a multi-way matching algorithm to cluster the detected 2D poses in all views. Each resulting cluster encodes 2D poses of the same person across different views and consistent correspondences across the keypoints, from which the 3D pose of each person can be effectively inferred. The proposed convex optimization based multi-way matching algorithm is efficient and robust against missing and false detections, without knowing the number of people in the scene. Moreover, we propose to combine geometric and appearance cues for cross-view matching. The proposed approach achieves significant performance gains from the state-of-the-art (96.3% vs. 90.6% and 96.9% vs. 88% on the Campus and Shelf datasets, respectively), while being efficient for real-time applications.  
+</p>
+    <div id="files" style="margin-top: 5px">
+      [<a href="https://arxiv.org/pdf/1901.04111.pdf">Paper</a>]&nbsp;&nbsp;&nbsp;&nbsp;
+      [<a href="https://github.com/zju-3dv/multi-person3dpose">Code</a>]&nbsp;&nbsp;&nbsp;&nbsp;
+      [<a href="./egpaper_supplementary.pdf">Supplymentary</a>]&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+
+
+  </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>
