@@ -166,8 +166,8 @@
       <div class="content-table flex-column">
         <!--End Intro-->
 	<center>
-<iframe width="800" height="600" src="https://www.youtube.com/embed/axSRz6G98gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0rWExYkIHBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	      </center>
 
 
 
@@ -184,12 +184,10 @@
 <div id="abstract">
     <h2 class="abstract" > Abstract </h2>
 <p style="text-align:justify">
-This paper addresses the problem of 3D pose estimation for multiple people in a few calibrated camera views. The main challenge of this problem is to find the cross-view correspondences among noisy and incomplete 2D pose predictions. Most previous methods address this challenge by directly reasoning in 3D using a pictorial structure model, which is inefficient due to the huge state space. We propose a fast and robust approach to solve this problem. Our key idea is to use a multi-way matching algorithm to cluster the detected 2D poses in all views. Each resulting cluster encodes 2D poses of the same person across different views and consistent correspondences across the keypoints, from which the 3D pose of each person can be effectively inferred. The proposed convex optimization based multi-way matching algorithm is efficient and robust against missing and false detections, without knowing the number of people in the scene. Moreover, we propose to combine geometric and appearance cues for cross-view matching. The proposed approach achieves significant performance gains from the state-of-the-art (96.3% vs. 90.6% and 96.9% vs. 88% on the Campus and Shelf datasets, respectively), while being efficient for real-time applications.  
-</p>
+Recent advances in image-based human pose estimation make it possible to capture 3D human motion from a single RGB video. However, the inherent depth ambiguity and self-occlusion in a single view prohibit the recovery of as high-quality motion as multi-view reconstruction. While multi-view videos are not common, the videos of a celebrity performing a specific action are usually abundant on the Internet. Even if these videos were recorded at different time instances, they would encode the same motion characteristics of the person. Therefore, we propose to capture human motion by jointly analyzing these Internet videos instead of using single videos separately. However, this new task poses many new challenges that cannot be addressed by existing methods, as the videos are unsynchronized, the camera viewpoints are unknown, the background scenes are different, and the human motions are not exactly the same among videos. To address these challenges, we propose a novel optimization-based framework and experimentally demonstrate its ability to recover much more precise and detailed motion from multiple videos, compared against monocular motion capture methods.</p>
     <div id="files" style="margin-top: 5px">
-      [<a href="https://arxiv.org/pdf/1901.04111.pdf">Paper</a>]&nbsp;&nbsp;&nbsp;&nbsp;
-      [<a href="https://github.com/zju-3dv/multi-person3dpose">Code</a>]&nbsp;&nbsp;&nbsp;&nbsp;
-      [<a href="./egpaper_supplementary.pdf">Supplymentary</a>]&nbsp;&nbsp;&nbsp;&nbsp;
+      [<a href="https://zju3dv.github.io/iMoCap/">Paper</a>]&nbsp;&nbsp;&nbsp;&nbsp;
+      [<a href="https://github.com/zju3dv/iMoCap">Dataset</a>]&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
 
 
