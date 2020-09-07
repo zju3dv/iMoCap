@@ -15,6 +15,10 @@
 
 [Download](https://drive.google.com/file/d/1yD9VuKo5g4QDHAcBDli8a7absUVtZCXC/view?usp=sharing)
 
-### Modified Human3.6M dataset with ground-truth
+### Modified Human3.6M dataset 
 
-[Download]()
+[Download](https://drive.google.com/file/d/10KQTrp-TK6XvZuo27Xz0BPLF38S074co/view?usp=sharing)
+
+## Quantitative evaluation on Modified Human3.6M dataset 
+
+
