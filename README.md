@@ -1,4 +1,20 @@
-# iMoCap_dataset
-dataset for ECCV 2020 "Motion Capture from Internet Videos"
+# Motion Capture from Internet Videos
 
-Our dataset is coming soon...
+
+
+> [Motion Capture from Internet Videos](https://arxiv.org/pdf/2008.07931.pdf)  
+> Junting Dong*, Qing Shuai*, Yuanqing Zhang, Xian Liu, Xiaowei Zhou, Hujun Bao   
+> ECCV 2020 
+> [Project Page](https://zju3dv.github.io/iMoCap/)
+
+
+
+## Datasets
+
+### Internet video dataset
+
+[Download](https://drive.google.com/file/d/1yD9VuKo5g4QDHAcBDli8a7absUVtZCXC/view?usp=sharing)
+
+### Modified Human3.6M dataset with ground-truth
+
+[Download]()
